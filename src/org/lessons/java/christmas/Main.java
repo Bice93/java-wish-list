@@ -2,6 +2,7 @@ package org.lessons.java.christmas;
 
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
@@ -43,6 +44,13 @@ public class Main {
 		}
 		//Stampo il totale dei desideri
 		System.out.println("\nIl numero totale dei desideri è: " + wishList.size());
+		
+		//ordinare la lista e stampare a video la lista ordinata
+		Collections.sort(wishList);
+		for (int i = 0; i < wishList.size(); i++) {
+			System.out.println(wishList.get(i));			
+		}
+		
 		}
 
 }
